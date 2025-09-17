@@ -53,11 +53,11 @@ const Hero = () => {
       className="relative w-full flex h-[600px] items-center"
     >
       {/* Texte */}
-      <div className="flex flex-col gap-5 w-[60%] ml-20 z-10">
+      <div className="flex flex-col gap-5 w-[60%] ml-30 z-10">
         <h1 className="hero-title text-7xl font-bold text-[#0044ff] drop-shadow-lg">
           Clinique Les Sources
         </h1>
-        <p className="hero-sub text-3xl font-medium text-gray-800">
+        <p className="hero-sub text-4xl font-medium text-gray-800">
           Votre Santé, Notre{" "}
           <span className="text-[#0044ff] font-bold">
             <FlipWords words={words} duration={1500} />
@@ -67,11 +67,15 @@ const Hero = () => {
       </div>
 
       {/* Image Background */}
-      <img
-        src="/assets/home3.png"
-        alt="Clinique"
-        className="hero-bg absolute w-full h-full object-cover opacity-80 rounded-2xl -z-10"
-      />
+     
+      <video
+        className='hero-bg absolute w-full h-full object-cover opacity-80 rounded-2xl -z-10'
+        src="/assets/video2.MOV"
+        autoPlay
+        loop
+        muted
+        playsInline
+      ></video>
     </div>
   )
 }

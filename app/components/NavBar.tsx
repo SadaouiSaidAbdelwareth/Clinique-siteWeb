@@ -119,7 +119,7 @@ export function NavbarComponent({ logo, navLinks, contactBtn }: NavbarProps) {
 
       {/* Sidebar for Mobile (appears from right) */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 transform ${
+        className={`fixed top-0 right-0 h-full w-1/2 bg-white shadow-lg z-50 transform ${
           sidebarOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 md:hidden`}
       >
@@ -160,7 +160,7 @@ export function NavbarComponent({ logo, navLinks, contactBtn }: NavbarProps) {
       {/* Overlay when sidebar is open */}
       {sidebarOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-30 z-40 md:hidden"
+          className="fixed inset-0 bg-transparent backdrop-blur-sm bg-opacity-30 z-40 md:hidden"
           onClick={() => setSidebarOpen(false)}
         />
       )}
