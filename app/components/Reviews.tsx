@@ -34,8 +34,8 @@ const Reviews = () => {
         <Carousel className=' w-[80%] lg:w-1/3   '>
 
           <CarouselContent className=' '>
-            {reviews.map((item) => (
-                <CarouselItem>
+            {reviews.map((item,id) => (
+                <CarouselItem key={id} >
                     <div className="p-1">
                         <Card className=' bg-transparent shadow-none border-none w- '>
                             <CardContent className="flex flex-col gap-6    justify-center p-6 bg-transparent">
